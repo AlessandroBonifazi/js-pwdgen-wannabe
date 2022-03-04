@@ -2,15 +2,17 @@
 // console.log('JS OK!');
 
 // Form
-let pswOutput = document.getElementById('pswOutput');
+const pswOutput = document.getElementById('pswOutput');
 
 // Info
-let userName = prompt('Your name');
+const userName = prompt('Your name', 'Alex');
 
-let userSurname = prompt('Your Surname');
+const userSurname = prompt('Your Surname', 'Boni');
 
-let userColor = prompt('Your favourite color');
+const userColor = prompt('Your favourite color', 'black');
 
-let password = `${userName}${userSurname}${userColor}21`;
+const password = `${userName}${userSurname}${userColor}21`;
 
 document.getElementById('pswOutput').innerText = password;
+// document.getElementById('pswOutput').innerHTML = '<span>'+password+'</span>';
+
